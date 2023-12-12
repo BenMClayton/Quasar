@@ -1,0 +1,11 @@
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\quasar\target\debug\deps\zstring-02165f6e3cc8eede.rmeta: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\char_decoder.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\zstr.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\array_zstring.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\_zstring.rs
+
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\quasar\target\debug\deps\libzstring-02165f6e3cc8eede.rlib: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\char_decoder.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\zstr.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\array_zstring.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\_zstring.rs
+
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\quasar\target\debug\deps\zstring-02165f6e3cc8eede.d: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\char_decoder.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\zstr.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\array_zstring.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\_zstring.rs
+
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\lib.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\char_decoder.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\zstr.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\array_zstring.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\zstring-0.2.4\src\_zstring.rs:

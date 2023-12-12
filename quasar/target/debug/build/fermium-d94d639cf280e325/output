@@ -1,0 +1,12 @@
+cargo:rerun-if-changed=build.rs
+Performing dynamically-linked build against the system SDL2.
+out_dir:C:\Users\bencl\OneDrive\Desktop\Github\Quasar\quasar\target\debug\build\fermium-d94d639cf280e325\out
+cargo_manifest_dir:C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\fermium-22605.0.0
+target:x86_64-pc-windows-msvc
+target_os:windows
+target_arch:x86_64
+target_vendor:pc
+dll_from:C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\fermium-22605.0.0\SDL2-2.26.5-devel\SDL2.dll
+dll_to:C:\Users\bencl\OneDrive\Desktop\Github\Quasar\quasar\target\debug\build\fermium-d94d639cf280e325\out\SDL2.dll
+cargo:rustc-link-search=C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\fermium-22605.0.0\SDL2-2.26.5-devel
+cargo:rustc-link-lib=SDL2
