@@ -1,0 +1,11 @@
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\Quasar\target\debug\deps\dl_api-bea3d3c6baba700f.rmeta: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\ffi\windows.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\error.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\linker.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\manual.rs
+
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\Quasar\target\debug\deps\libdl_api-bea3d3c6baba700f.rlib: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\ffi\windows.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\error.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\linker.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\manual.rs
+
+C:\Users\bencl\OneDrive\Desktop\Github\Quasar\Quasar\target\debug\deps\dl_api-bea3d3c6baba700f.d: C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\lib.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\ffi\windows.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\error.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\linker.rs C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\manual.rs
+
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\lib.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\ffi\windows.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\error.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\linker.rs:
+C:\Users\bencl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dl_api-0.4.0\src\manual.rs:
