@@ -25,6 +25,7 @@ fn main() {
                 WindowEvent::CloseRequested => {
                     *control_flow = ControlFlow::Exit;
                 }
+
                 _ => {}
             },
             _ => {}
