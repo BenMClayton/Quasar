@@ -17,9 +17,15 @@ impl Survival {
         self.day_time = (self.day_time + dt / 180.0) % 1.0;
 
         if consumes_hunger {
-            self.hunger = (self.hunger - dt * 0.45).max(0.0);
+            // Cap hunger depletion to prevent excessive drain from high dt values
+            let max_drain_per_frame = 50.0;
+            let actual_dt = dt.min(max_drain_per_frame / 0.45);
+            
+            self.hunger = (self.hunger - actual_dt * 0.45).max(0.0);
+            
+            // Apply starvation damage only if hunger is depleted, using the same capped time delta
             if self.hunger <= 0.0 {
-                self.health = (self.health - dt * 3.0).max(1.0);
+                self.health = (self.health - actual_dt * 3.0).max(1.0);
             }
         }
     }
