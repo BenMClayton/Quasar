@@ -14,7 +14,9 @@ impl IsoCamera {
     pub fn project(&self, position: Vec2, elevation: f32) -> Vec2 {
         let projected = raw_project(position);
         let focus = raw_project(self.focus);
-        vec2(screen_width() * 0.5, screen_height() * 0.47) + (projected - focus) * self.zoom
+        // Use normalized focal point that scales with zoom to maintain consistent vertical centering across resolutions and zoom levels. The Y-center ratio (0.47) is applied relative to the scaled screen height, ensuring stable camera behavior when zoom changes.
+        let screen_center_y = screen_height() as f32 * 0.47 / self.zoom;
+        vec2(screen_width() as f32 * 0.5, screen_center_y) + (projected - focus) * self.zoom
             - vec2(0.0, elevation * ISO_HEIGHT * self.zoom)
     }
 
