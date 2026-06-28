@@ -28,13 +28,18 @@ pub fn clicked_crafting_slot() -> Option<usize> {
     let columns = crafting_columns();
     let panel_w = crafting_panel_width(columns);
     let panel_x = screen_width() * 0.5 - panel_w * 0.5;
-    let panel_y = screen_height() * 0.5 - crafting_panel_height(columns) * 0.5;
+    let panel_height = crafting_panel_height(columns);
+    let panel_y = screen_height() * 0.5 - panel_height * 0.5;
 
-    for index in 0..9 {
+    // Calculate actual number of rows that fit in the panel height to avoid checking non-existent slots
+    const SLOT_HEIGHT: f32 = 110.0 + 86.0; // row spacing (110) + card content area (86)
+    let max_rows = ((panel_height - 92.0) / SLOT_HEIGHT).floor() as usize;
+
+    for index in 0..(columns * max_rows.min(9)) {
         let col = index % columns;
         let row = index / columns;
         let card_x = panel_x + 34.0 + col as f32 * 270.0;
-        let card_y = panel_y + 92.0 + row as f32 * 110.0;
+        let card_y = panel_y + 92.0 + row as f32 * SLOT_HEIGHT;
         if mouse_x >= card_x
             && mouse_x <= card_x + 246.0
             && mouse_y >= card_y
