@@ -33,17 +33,36 @@ pub fn clicked_crafting_slot() -> Option<usize> {
 
     // Calculate actual number of rows that fit in the panel height to avoid checking non-existent slots
     const SLOT_HEIGHT: f32 = 110.0 + 86.0; // row spacing (110) + card content area (86)
+    
+    // Ensure we have at least one valid row before calculating max_rows
+    let min_panel_height_for_one_row = 92.0 + SLOT_HEIGHT;
+    if panel_height < min_panel_height_for_one_row {
+        return None;
+    }
+
     let max_rows = ((panel_height - 92.0) / SLOT_HEIGHT).floor() as usize;
+    
+    // Guard against zero rows due to floating-point edge cases
+    if max_rows == 0 {
+        return None;
+    }
 
     for index in 0..(columns * max_rows.min(9)) {
         let col = index % columns;
         let row = index / columns;
         let card_x = panel_x + 34.0 + col as f32 * 270.0;
         let card_y = panel_y + 92.0 + row as f32 * SLOT_HEIGHT;
-        if mouse_x >= card_x
-            && mouse_x <= card_x + 246.0
-            && mouse_y >= card_y
-            && mouse_y <= card_y + 86.0
+        
+        // Add margin tolerance for hit detection to handle anti-aliasing and cursor precision issues
+        const CARD_WIDTH: f32 = 246.0;
+        const CARD_CONTENT_HEIGHT: f32 = 86.0;
+        const HIT_MARGIN_X: f32 = 15.0; // Allow some tolerance on left/right edges
+        const HIT_MARGIN_Y: f32 = 10.0; // Allow some tolerance on top/bottom edges
+        
+        if mouse_x >= card_x - HIT_MARGIN_X
+            && mouse_x <= card_x + CARD_WIDTH + HIT_MARGIN_X
+            && mouse_y >= card_y - HIT_MARGIN_Y
+            && mouse_y <= card_y + CARD_CONTENT_HEIGHT + HIT_MARGIN_Y
         {
             return Some(index);
         }
