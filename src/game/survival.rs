@@ -1,8 +1,22 @@
+use std::fmt;
+
+#[derive(Clone, Copy)]
 pub struct Survival {
     pub health: f32,
     pub hunger: f32,
     pub day_time: f32,
 }
+
+impl fmt::Debug for Survival {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.debug_struct("Survival")
+            .field("health", &self.health)
+            .field("hunger", &self.hunger)
+            .field("day_time", &self.day_time)
+            .finish()
+    }
+}
+
 
 impl Survival {
     pub fn new() -> Self {
