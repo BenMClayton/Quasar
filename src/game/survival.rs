@@ -38,3 +38,20 @@ impl Survival {
     }
 }
 
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn survival_new_initializes_with_expected_values() {
+        // Verify that new() creates a Survival instance with the correct initial values
+        let survival = Survival::new();
+
+        assert_eq!(survival.health, 100.0);
+        assert_eq!(survival.hunger, 92.0);
+        assert!((survival.day_time - 0.18).abs() < f32::EPSILON * 10.0);
+    }
+
+
+}
