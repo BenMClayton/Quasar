@@ -44,6 +44,7 @@ pub struct Ship {
     pub velocity: Vec2,
 }
 
+#[derive(Debug)]
 pub struct Message {
     pub text: String,
     pub timer: f32,
