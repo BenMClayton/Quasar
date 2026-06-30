@@ -28,7 +28,7 @@ pub struct Structure {
     pub kind: StructureKind,
 }
 
-#[derive(Clone, Copy, Default)]
+#[derive(Clone, Copy, Default, Debug)]
 pub struct Cost {
     pub wood: u32,
     pub stone: u32,
