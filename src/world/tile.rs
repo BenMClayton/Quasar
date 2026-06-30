@@ -59,3 +59,29 @@ impl Tile {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn tile_kind_is_resource_returns_true_for_resources() {
+        // Verify that resource tiles correctly return true for is_resource
+        assert!(TileKind::Forest.is_resource());
+        assert!(TileKind::Stone.is_resource());
+        assert!(TileKind::CopperOre.is_resource());
+        assert!(TileKind::CoalOre.is_resource());
+        assert!(TileKind::Crystal.is_resource());
+    }
+
+    #[test]
+    fn tile_kind_is_resource_returns_false_for_non_resources() {
+        // Verify that non-resource tiles correctly return false for is_resource
+        assert!(!TileKind::Meadow.is_resource());
+        assert!(!TileKind::Water.is_resource());
+        assert!(!TileKind::Cliff.is_resource());
+        assert!(!TileKind::Sand.is_resource());
+        assert!(!TileKind::Snow.is_resource());
+    }
+}
+
