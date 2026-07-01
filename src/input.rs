@@ -101,6 +101,9 @@ pub fn clicked_hotbar_slot() -> Option<usize> {
     None
 }
 
+/// Clicked settings button detection.
+/// Uses exact boundary matching (mouse_x >= x && mouse_y <= y + 38) without HIT_MARGIN tolerance,
+/// which is intentional for the small settings button as a product design choice for precise UI control on small buttons. This differs from crafting slots where margins are used elsewhere in codebase to handle anti-aliasing and cursor precision issues. See hotbar implementation at line 79-80 for similar rationale.
 pub fn clicked_settings_button() -> bool {
     if !is_mouse_button_pressed(MouseButton::Left) {
         return false;
