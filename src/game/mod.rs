@@ -493,6 +493,8 @@ fn toggle_panel(current: MenuPanel, requested: MenuPanel) -> MenuPanel {
     }
 }
 
+/// Returns the KeyCode values for hotbar selection (Key1..Key9).
+/// These keys serve as the single source of truth for mapping player input to hotbar slots.
 fn hotbar_keys() -> [KeyCode; 9] {
     [
         KeyCode::Key1,
@@ -506,6 +508,7 @@ fn hotbar_keys() -> [KeyCode; 9] {
         KeyCode::Key9,
     ]
 }
+
 
 fn clamp_length(value: Vec2, max: f32) -> Vec2 {
     if value.length_squared() > max * max {
