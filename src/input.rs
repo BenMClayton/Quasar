@@ -77,9 +77,7 @@ pub fn scroll_delta() -> f32 {
 
 /// Clicked hotbar slot detection.
 /// Uses exact boundary matching (mouse_x >= x && mouse_y <= y + slot) without HIT_MARGIN tolerance,
-/// which is intentional for hotbar slots unlike crafting slots where margins are used elsewhere in codebase
-/// to handle anti-aliasing and cursor precision issues. This design choice provides precise control over
-/// hotbar interactions; if future UI changes require more forgiving hit areas, consider adding margin constants here.
+/// which is intentional for hotbar slots as a product design choice for precise UI control. This differs from crafting slots where margins are used elsewhere in codebase to handle anti-aliasing and cursor precision issues.
 pub fn clicked_hotbar_slot() -> Option<usize> {
     if !is_mouse_button_pressed(MouseButton::Left) {
         return None;
