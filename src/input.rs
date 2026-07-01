@@ -56,8 +56,8 @@ pub fn clicked_crafting_slot() -> Option<usize> {
         // Add margin tolerance for hit detection to handle anti-aliasing and cursor precision issues
         const CARD_WIDTH: f32 = 246.0;
         const CARD_CONTENT_HEIGHT: f32 = 86.0;
-        const HIT_MARGIN_X: f32 = 15.0; // Allow some tolerance on left/right edges
-        const HIT_MARGIN_Y: f32 = 10.0; // Allow some tolerance on top/bottom edges
+        const HIT_MARGIN_X: f32 = 15.0; // Allow some tolerance on left/right edges for anti-aliasing and cursor precision issues
+        const HIT_MARGIN_Y: f32 = 10.0; // Allow some tolerance on top/bottom edges for anti-aliasing and cursor precision issues
         
         if mouse_x >= card_x - HIT_MARGIN_X
             && mouse_x <= card_x + CARD_WIDTH + HIT_MARGIN_X
