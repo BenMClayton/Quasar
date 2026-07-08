@@ -494,7 +494,7 @@ fn toggle_panel(current: MenuPanel, requested: MenuPanel) -> MenuPanel {
 }
 
 /// Returns the KeyCode values for hotbar selection (Key1..Key9).
-/// These keys serve as the single source of truth for mapping player input to hotbar slots.
+/// These keys map to the player's 9‑slot hotbar inventory, where each number key selects the corresponding slot.
 fn hotbar_keys() -> [KeyCode; 9] {
     [
         KeyCode::Key1,
