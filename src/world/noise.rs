@@ -5,8 +5,11 @@ pub fn fractal_noise(x: f32, y: f32, seed: u32, octaves: usize, scale: f32) -> f
     let mut total = 0.0;
 
     for octave in 0..octaves {
-        value +=
-            value_noise(x * frequency, y * frequency, seed ^ octave as u32 * 0x9e37) * amplitude;
+        value += value_noise(
+            x * frequency,
+            y * frequency,
+            seed ^ (octave as u32 * 0x9e37),
+        ) * amplitude;
         total += amplitude;
         amplitude *= 0.5;
         frequency *= 2.0;

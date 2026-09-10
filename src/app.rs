@@ -35,7 +35,7 @@ mod tests {
         assert_eq!(app.game.worlds.len(), 5);
         assert!(app.game.player.position.x != 0.0);
         assert_eq!(app.game.inventory.wood, 2);
-        
+
         // Verify renderer was initialized (it should not panic)
         let _ = app.renderer;
 

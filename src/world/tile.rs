@@ -45,6 +45,8 @@ pub struct Tile {
     pub biome: Biome,
     pub elevation: f32,
     pub moisture: f32,
+    // Generated now so later climate systems can remain deterministic.
+    #[allow(dead_code)]
     pub heat: f32,
 }
 
@@ -84,4 +86,3 @@ mod tests {
         assert!(!TileKind::Snow.is_resource());
     }
 }
-

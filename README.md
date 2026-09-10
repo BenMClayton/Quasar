@@ -40,8 +40,18 @@ You begin on a strange generated world, gather resources, smelt copper, repair a
 
 ## Run
 
-```powershell
+Requires a current stable Rust toolchain.
+
+```sh
 cargo run
+```
+
+## Verification
+
+```sh
+cargo fmt --check
+cargo clippy --all-targets -- -D warnings
+cargo test
 ```
 
 ## Project Layout
@@ -65,3 +75,10 @@ The long-term fantasy is "Minecraft worlds are connected, but space is the hallw
 - Minecraft-style survival escalation: hand tools, shelter, mining, crafting tiers, danger, and world mastery;
 - Factorio-style machinery: extractors, belts, furnaces, power, item routing, logistics, and eventually inter-world supply lines;
 - Rust-first systems that can grow from this 2D prototype toward chunked terrain, crafting, automation, or multiplayer.
+
+## Status
+
+Quasar is a playable systems prototype rather than a finished game. The current
+repository focuses on a coherent exploration/crafting loop and readable Rust
+module boundaries; saves, audio, controller support, and production content are
+not yet implemented.

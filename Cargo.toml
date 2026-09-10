@@ -2,6 +2,9 @@
 name = "quasar"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.72"
+description = "A procedural isometric survival and automation game prototype"
+repository = "https://github.com/BenMClayton/Quasar"
 
 [dependencies]
 macroquad = "=0.4.13"

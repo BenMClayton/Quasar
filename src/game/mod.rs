@@ -509,7 +509,6 @@ fn hotbar_keys() -> [KeyCode; 9] {
     ]
 }
 
-
 fn clamp_length(value: Vec2, max: f32) -> Vec2 {
     if value.length_squared() > max * max {
         value.normalize() * max

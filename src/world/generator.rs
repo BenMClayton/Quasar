@@ -111,6 +111,7 @@ fn generate_world(id: WorldId, name: &'static str, seed: u32) -> World {
     }
 }
 
+#[allow(clippy::too_many_arguments)]
 fn generate_tile(
     x: i32,
     y: i32,
